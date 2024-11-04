@@ -1,498 +1,647 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Home Page</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<style>
-	body {
-		margin: 0;
-		background-color: white;
-		}
-	.contact {
-		position: relative;
-		min-height: 100vh;
-		padding: 50px 100px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		/*background url('ecom.jpeg');
+    <style>
+      body {
+        margin: 0;
+        background-color: white;
+      }
+      .contact {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /*background url('ecom.jpeg');
 		background-size: cover;*/
-		}
-	.contact .contactcontent {
-		max-width: 800px;
-		text-align: center;
-		}
-	.contact .contactcontent h2 {
-		font-size: 40px;
-		font-weight: 500;
-		color: rgb(23, 7, 94);
-		font-family: Georgia, serif;
-		}
-	.contact .contactcontent p {
-		font-size: 23px;
-		font-weight: 300;
-		color: rgb(23, 7, 94);
-		}
-		.container1 {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 50px;
-		}
-		.container1 .contactinfo {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		}
-		.container1 .contactinfo .box {
-			position: relative;
-			padding: 20px 0;
-			display: flex;
-		}
-		.container1 .contactinfo .box .icon {
-			min-width: 60px;
-			height: 60px;
-			background: #002D62;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border-radius: 50%;
-			font-size: 22px;
-			color: white;
-		}
-		.container1 .contactinfo .box .text {
-			display: flex;
-			margin-left: 20px;
-			font-size: 16px;
-			color: rgb(23, 7, 94);
-			flex-direction: column;
-			font-weight: 300;
-		}
-		.container1 .contactinfo .box .text h2 {
-			font-weight: 500;
-			color: rgb(23, 7, 94);
-		}
-		.contactform {
-			width: 40%;
-			padding: 40px;
-			background: rgb(228, 229, 230);
-		}
-		.contactform h2{
-			font-size: 30px;
-			color: rgb(23, 7, 94);
-			font-weight: 500;
-		}
-		.contactform .inputbox {
-			position: relative;
-			width: 100%;
-			margin-top: 10px;
-		}
-		.contactform .inputbox input,
-		.contactform .inputbox textarea {
-			width: 100%;
-			padding: 5px 0;
-			font-size: 16px;
-			margin: 10px 0;
-			border: none;
-			border-bottom: 2px solid black;
-			outline: none;
-			resize: none;
-		}
-		.contactform .inputbox span {
-			position: absolute;
-			left: 0;
-			padding: 5px 0;
-			font-size: 16px;
-			margin: 10px 0;
-			pointer-events: none;
-			transition: 0.5s;
-			color: rgb(85, 115, 252);
-		
-		}
-		.contactform .inputbox input:focus ~ span,
-		.contactform .inputbox input:valid ~ span,
-		.contactform .inputbox textarea:focus ~ span,
-		.contactform .inputbox textarea:valid ~ span {
-			color: rgb(8, 10, 107);
-			font-size: 14px;
-			transform: translateY(-20px);
-		}
-		.contactform .inputbox input[type="submit"] {
-			width: 100px;
-			background: rgb(8, 10, 107);
-			border: none;
-			cursor: pointer;
-			padding: 10px;
-			font-size: 18px;
-			color: white;
-		}
-		@media (max-width: 991px)
-		{
-			.contact {
-				padding: 50px;
-			}
-			.container1 {
-				flex-direction: column;
-			}
-			.contact .contactinfo {
-				margin-bottom: 40px;
-			}
-			.container .contactinfo,
-			.contactform {
-				width: 250px;
-			}
-			.faqs {
-				width: -5000px;
-			}
-		}
-		
+      }
+      .contact .contactcontent {
+        max-width: 800px;
+        text-align: center;
+      }
+      .contact .contactcontent h2 {
+        font-size: 40px;
+        font-weight: 500;
+        color: rgb(23, 7, 94);
+        font-family: Georgia, serif;
+      }
+      .contact .contactcontent p {
+        font-size: 23px;
+        font-weight: 300;
+        color: rgb(23, 7, 94);
+      }
+      .container1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .container1 .contactinfo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      .container1 .contactinfo .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+      }
+      .container1 .contactinfo .box .icon {
+        min-width: 60px;
+        height: 60px;
+        background: #002d62;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+        color: white;
+      }
+      .container1 .contactinfo .box .text {
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: rgb(23, 7, 94);
+        flex-direction: column;
+        font-weight: 300;
+      }
+      .container1 .contactinfo .box .text h2 {
+        font-weight: 500;
+        color: rgb(23, 7, 94);
+      }
+      .contactform {
+        width: 40%;
+        padding: 40px;
+        background: rgb(228, 229, 230);
+      }
+      .contactform h2 {
+        font-size: 30px;
+        color: rgb(23, 7, 94);
+        font-weight: 500;
+      }
+      .contactform .inputbox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .contactform .inputbox input,
+      .contactform .inputbox textarea {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        resize: none;
+      }
+      .contactform .inputbox span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: rgb(85, 115, 252);
+      }
+      .contactform .inputbox input:focus ~ span,
+      .contactform .inputbox input:valid ~ span,
+      .contactform .inputbox textarea:focus ~ span,
+      .contactform .inputbox textarea:valid ~ span {
+        color: rgb(8, 10, 107);
+        font-size: 14px;
+        transform: translateY(-20px);
+      }
+      .contactform .inputbox input[type="submit"] {
+        width: 100px;
+        background: rgb(8, 10, 107);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+      }
+      @media (max-width: 991px) {
+        .contact {
+          padding: 50px;
+        }
+        .container1 {
+          flex-direction: column;
+        }
+        .contact .contactinfo {
+          margin-bottom: 40px;
+        }
+        .container .contactinfo,
+        .contactform {
+          width: 250px;
+        }
+        .faqs {
+          width: -5000px;
+        }
+      }
 
-#navItem1 {
-    color: white;
-    font-family: "Roboto";
-}
+      #navItem1 {
+        color: white;
+        font-family: "Roboto";
+      }
 
-#navItem2 {
-    color: white;
-    font-family: "Roboto";
-}
+      #navItem2 {
+        color: white;
+        font-family: "Roboto";
+      }
 
-#navItem3 {
-    color: white;
-    font-family: "Roboto";
-}
+      #navItem3 {
+        color: white;
+        font-family: "Roboto";
+      }
 
-#navItem4 {
-    color: white;
-    font-family: "Roboto";
-}
-#navItem5 {
-    color: white;
-    font-family: "Roboto";
-}
-#navItem6 {
-    color: white;
-    font-family: "Roboto";
-}
-#navItem7 {
-    color: white;
-    font-family: "Roboto";
-}
+      #navItem4 {
+        color: white;
+        font-family: "Roboto";
+      }
+      #navItem5 {
+        color: white;
+        font-family: "Roboto";
+      }
+      #navItem6 {
+        color: white;
+        font-family: "Roboto";
+      }
+      #navItem7 {
+        color: white;
+        font-family: "Roboto";
+      }
 
-nav { 
-	display: fixed-top;
-	background-color: #002D62;
-}
-footer {
-    background-color: #002D62;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    bottom: 0;
-    z-index: 1;
-}
+      nav {
+        display: fixed-top;
+        background-color: #002d62;
+      }
+      footer {
+        background-color: #002d62;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+      }
 
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+      .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
 
-.footer-section {
-    margin: 10px;
-    background-color: #002D62;
-}
+      .footer-section {
+        margin: 10px;
+        background-color: #002d62;
+      }
 
-.footer-section h3 {
-    color: white;
-    margin-bottom: 10px;
-}
+      .footer-section h3 {
+        color: white;
+        margin-bottom: 10px;
+      }
 
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
+      .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+      }
 
-.footer-section ul li {
-    margin: 5px 0;
-}
+      .footer-section ul li {
+        margin: 5px 0;
+      }
 
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 15px;
-}
+      .footer-section ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 15px;
+      }
 
-.footer-section ul li a:hover {
-    color: #00FFFF;
-}
+      .footer-section ul li a:hover {
+        color: #00ffff;
+      }
 
-.footer-image-left,
-.footer-image-right {
-   /* width: 150px;
+      .footer-image-left,
+      .footer-image-right {
+        /* width: 150px;
     height: auto;*/
-	width: 190px;
-    height: auto;
-}
+        width: 190px;
+        height: auto;
+      }
 
-.footer-center {
-    display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
-    text-align: center;
-}
+      .footer-center {
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+        text-align: center;
+      }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    padding: 4px 4px;
-    font-size: 20px;
-    font-family: Arial;
-}
-.imglogo{ 
-	height: auto;
-	width: 190px;
-}
-/* .dropdown .button{
+      footer a {
+        color: white;
+        text-decoration: none;
+        padding: 4px 4px;
+        font-size: 20px;
+        font-family: Arial;
+      }
+      .imglogo {
+        height: auto;
+        width: 190px;
+      }
+      /* .dropdown .button{
     height: 500px;
     width: 1000px;
     font-size: 16px;
 } */
-.nav-item.dropdown .dropdown-menu {
-    background-color: #002D62; /* Match navbar background */
-    min-width: 160px; /* Adjust width */
-}
+      .nav-item.dropdown .dropdown-menu {
+        background-color: #002d62; /* Match navbar background */
+        min-width: 160px; /* Adjust width */
+      }
 
-.dropdown-item {
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding for height */
-    font-family: "Roboto"; /* Font consistency */
-}
+      .dropdown-item {
+        color: white; /* Text color */
+        padding: 10px 20px; /* Padding for height */
+        font-family: "Roboto"; /* Font consistency */
+      }
 
-.dropdown-item:hover {
-    background-color: #00FFFF; /* Hover effect */
-    color: black; /* Change text color on hover */
-}
-
-
-
-	</style>
-</head>
-<body>
-	<div>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      .dropdown-item:hover {
+        background-color: #00ffff; /* Hover effect */
+        color: black; /* Change text color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://res.cloudinary.com/dc2wavkin/image/upload/v1730102034/sn2-removebg-preview_sdirio1_ppodpm.png" class="imglogo" />
-            </a>
-            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link active" id="navItem1" href="index.html">
-                        Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                    <a class="nav-link" href="vps.html" id="navItem2">VPS</a>
-                        <a class="nav-link" href="dedicated.html" id="navItem3">Dedicated</a>
-                        <a class="nav-link" href="shared.html" id="navItem4">Shared</a>
-                        <a class="nav-link" href="reseller.html" id="navItem5">Reseller</a>
-                        <a class="nav-link" href="contactus.html" id="navItem6">Contacts</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navItem7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Menu
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <a class="dropdown-item" href="aboutus.html">about us</a>
-                                <a class="dropdown-item" href="blog.html">blog</a>
-                                <a class="dropdown-item" href="#">News</a>
-                                <a class="dropdown-item" href="#">knowledge base</a>
-                                <a class="dropdown-item" href="#">terms & conditions</a>
-                                <a class="dropdown-item" href="#">privacy policy</a>
-                            </div>
-                        </li>
-                        
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://res.cloudinary.com/dc2wavkin/image/upload/v1730102034/sn2-removebg-preview_sdirio1_ppodpm.png"
+              class="imglogo"
+            />
+          </a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" id="navItem1" href="index.html">
+                Home
+                <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-link" href="vps.html" id="navItem2">VPS</a>
+              <a class="nav-link" href="dedicated.html" id="navItem3"
+                >Dedicated</a
+              >
+              <a class="nav-link" href="shared.html" id="navItem4">Shared</a>
+              <a class="nav-link" href="reseller.html" id="navItem5"
+                >Reseller</a
+              >
+              <a class="nav-link" href="contactus.html" id="navItem6"
+                >Contacts</a
+              >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navItem7"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="aboutus.html">about us</a>
+                  <a class="dropdown-item" href="blog.html">blog</a>
+                  <a class="dropdown-item" href="#">News</a>
+                  <a class="dropdown-item" href="#">knowledge base</a>
+                  <a class="dropdown-item" href="#">terms & conditions</a>
+                  <a class="dropdown-item" href="#">privacy policy</a>
                 </div>
+              </li>
             </div>
+          </div>
         </div>
-    </nav>
-</div><br/><br/><br/><br/><br/>
-<section class="contact">
-		<div class="contactcontent">
-			<h2>Contact Us</h2>
-			<p>We'd love to hear from you! Reach out to us via any of the following methods:</p>
-		</div>
-		<div class="container1">
-			<div class="contactinfo">
-				<div class="box">
-					<div class="icon">
-					<ion-icon name="call"></ion-icon>
-					</div>
-					<div class="text">
-					<h2 style="font-family: Century;">Phone</h2>
-					<p>+91 ---</p>
-					</div>
-				</div>
-				<div class="box">
-					<div class="icon">
-					<ion-icon name="pin"></ion-icon>
-					</div>
-					<div class="text">
-					<h2 style="font-family: Century;">Address</h2>
-					<p>street, district, state pincode</p>
-					</div>
-				</div>
-				<div class="box">
-					<div class="icon">
-					<ion-icon name="clock"></ion-icon>
-					</div>
-					<div class="text">
-					<h2 style="font-family: Century;">Opening Hours</h2>
-					<p>day - day, 0:00AM - 0:00PM</p>
-					</div>
-				</div>
-			</div>
-			<div class="contactform">
-				<form>
-					<h2>send message</h2>
-					<div class="inputbox">
-						<input type="text" name="" required="required">
-						<span>Name</span>
-					</div>
-					<div class="inputbox">
-						<input type="text" name="" required="required">
-						<span>Email</span>
-					</div>
-					<div class="inputbox">
-						<textarea required="required"></textarea>
-						<span>Your Msg</span>
-					</div>
-					<div class="inputbox">
-						<input type="submit" name="">
-					</div>
-			</div>
-		</div>
-		<div class="faqs">
-			<h1 style="margin-top: 30px; align: center;">FAQs</h1>
-			<div class="dropdown">
-				<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="height: 70px; width: 400px; background-color: rgb(228, 229, 230); color: rgb(8, 10, 107); margin-bottom: 15px;">
-				  QUESTION NUMBER ONE ?
-				</button>
-				<ul class="dropdown-menu">
-				  <li>ANSWER FOR QUESTION NUMBER ONE......................</li>
-				  </ul>
-			  </div>
-
-			  <div class="dropdown">
-				<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="height: 70px; width: 400px; background-color: rgb(228, 229, 230); color: rgb(8, 10, 107); margin-bottom: 15px;">
-				  QUESTION NUMBER TWO ?
-				</button>
-				<ul class="dropdown-menu">
-				  <li>ANSWER FOR QUESTION NUMBER TWO......................</li>
-				  </ul>
-			  </div>
-			  <div class="dropdown">
-				<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="height: 70px; width: 400px; background-color: rgb(228, 229, 230); color: rgb(8, 10, 107); margin-bottom: 15px;">
-				  QUESTION NUMBER THREE ?
-				</button>
-				<ul class="dropdown-menu">
-				  <li>ANSWER FOR QUESTION NUMBER THREE......................</li>
-				  </ul>
-			  </div>
-			  <div class="dropdown">
-				<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="height: 70px; width: 400px; background-color: rgb(228, 229, 230); color: rgb(8, 10, 107); margin-bottom: 15px;">
-				  QUESTION NUMBER FOUR ?
-				</button>
-				<ul class="dropdown-menu">
-				  <li>ANSWER FOR QUESTION NUMBER FOUR......................</li>
-				  </ul>
-			  </div>
-			  <div class="dropdown">
-				<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="height: 70px; width: 400px; background-color: rgb(228, 229, 230); color: rgb(8, 10, 107); margin-bottom: 15px;">
-				  QUESTION NUMBER FIVE ?
-				</button>
-				<ul class="dropdown-menu">
-				  <li>ANSWER FOR QUESTION NUMBER FIVE......................</li>
-				  </ul>
-			  </div>
-			
-			
-		</div>
-	</section>
-	<footer>
-        <div style="text-align: left; font-size: 20px; margin-bottom: 60px; padding-left: 40px; font-family: Baskerville Old Face;">
-            <p style="font-size: 35px;"><b>Build Your Website With ServerNexGen</b></p>
-            <p>From professional business to enterprise, we’ve got you covered!</p>
+      </nav>
+    </div>
+    <br /><br /><br /><br /><br />
+    <section class="contact">
+      <div class="contactcontent">
+        <h2>Contact Us</h2>
+        <p>
+          We'd love to hear from you! Reach out to us via any of the following
+          methods:
+        </p>
+      </div>
+      <div class="container1">
+        <div class="contactinfo">
+          <div class="box">
+            <div class="icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            <div class="text">
+              <h2 style="font-family: Century">Phone</h2>
+              <p>+91 ---</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <ion-icon name="pin"></ion-icon>
+            </div>
+            <div class="text">
+              <h2 style="font-family: Century">Address</h2>
+              <p>street, district, state pincode</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <ion-icon name="clock"></ion-icon>
+            </div>
+            <div class="text">
+              <h2 style="font-family: Century">Opening Hours</h2>
+              <p>day - day, 0:00AM - 0:00PM</p>
+            </div>
+          </div>
         </div>
 
-        <div class="footer-container">
-            <div>
-                <img class="footer-image-left" src="https://res.cloudinary.com/dc2wavkin/image/upload/v1730102034/sn2-removebg-preview_sdirio1_ppodpm.png" alt="Left Footer Image">
-                <p style="font-size: 15px; padding: 15px;">ServerNexGen, address<br/>state, pincode</p>
-                <p style="font-size: 15px; padding: 15px;">Copyright &copy; 2024 servernexgen.com.<br />All rights reserved.</p>
-                <a href="#">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
+        <div class="contactform">
+          <form id="contact-form">
+            <h2>send message</h2>
+            <div class="inputbox">
+              <input type="text" name="name" id="name" required="required" />
+              <span>Name</span>
             </div>
-            <div class="footer-section">
-                <h4 style="color: #00BFFF;">Company</h4>
-                <ul>
-                    <li><a href="aboutus.html">About us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contactus.html">Contact</a></li>
-                </ul>
+            <div class="inputbox">
+              <input type="text" name="email" id="email" required="required" />
+              <span>Email</span>
             </div>
-            <div class="footer-section">
-                <h4 style="color: #00BFFF;">Community</h4>
-                <ul>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Content</a></li>
-                </ul>
+            <div class="inputbox">
+              <textarea
+                required="required"
+                name="message"
+                id="message"
+              ></textarea>
+              <span>Your Msg</span>
             </div>
-            <div class="footer-section">
-                <h4 style="color: #00BFFF;">Services</h4>
-                <ul>
-                    <li><a href="shared.html">Shared Hosting</a></li>
-                    <li><a href="reseller.html">Reseller Hosting</a></li>
-                    <li><a href="vps.html">Virtual Private Servers</a></li>
-                    <li><a href="dedicated.html">Dedicated Servers</a></li>
-                </ul>
+            <div class="inputbox">
+              <input type="submit" name="" value="Send" />
             </div>
-            <div class="footer-section">
-                <h4 style="color: #00BFFF;">Login</h4>
-                <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                </ul>
-            </div>
+          
         </div>
+      </div>
+      <div class="faqs">
+        <h1 style="margin-top: 30px; align: center">FAQs</h1>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn dropdown-toggle"
+            data-bs-toggle="dropdown"
+            style="
+              height: 70px;
+              width: 400px;
+              background-color: rgb(228, 229, 230);
+              color: rgb(8, 10, 107);
+              margin-bottom: 15px;
+            "
+          >
+            QUESTION NUMBER ONE ?
+          </button>
+          <ul class="dropdown-menu">
+            <li>ANSWER FOR QUESTION NUMBER ONE......................</li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn dropdown-toggle"
+            data-bs-toggle="dropdown"
+            style="
+              height: 70px;
+              width: 400px;
+              background-color: rgb(228, 229, 230);
+              color: rgb(8, 10, 107);
+              margin-bottom: 15px;
+            "
+          >
+            QUESTION NUMBER TWO ?
+          </button>
+          <ul class="dropdown-menu">
+            <li>ANSWER FOR QUESTION NUMBER TWO......................</li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn dropdown-toggle"
+            data-bs-toggle="dropdown"
+            style="
+              height: 70px;
+              width: 400px;
+              background-color: rgb(228, 229, 230);
+              color: rgb(8, 10, 107);
+              margin-bottom: 15px;
+            "
+          >
+            QUESTION NUMBER THREE ?
+          </button>
+          <ul class="dropdown-menu">
+            <li>ANSWER FOR QUESTION NUMBER THREE......................</li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn dropdown-toggle"
+            data-bs-toggle="dropdown"
+            style="
+              height: 70px;
+              width: 400px;
+              background-color: rgb(228, 229, 230);
+              color: rgb(8, 10, 107);
+              margin-bottom: 15px;
+            "
+          >
+            QUESTION NUMBER FOUR ?
+          </button>
+          <ul class="dropdown-menu">
+            <li>ANSWER FOR QUESTION NUMBER FOUR......................</li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn dropdown-toggle"
+            data-bs-toggle="dropdown"
+            style="
+              height: 70px;
+              width: 400px;
+              background-color: rgb(228, 229, 230);
+              color: rgb(8, 10, 107);
+              margin-bottom: 15px;
+            "
+          >
+            QUESTION NUMBER FIVE ?
+          </button>
+          <ul class="dropdown-menu">
+            <li>ANSWER FOR QUESTION NUMBER FIVE......................</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div
+        style="
+          text-align: left;
+          font-size: 20px;
+          margin-bottom: 60px;
+          padding-left: 40px;
+          font-family: Baskerville Old Face;
+        "
+      >
+        <p style="font-size: 35px">
+          <b>Build Your Website With ServerNexGen</b>
+        </p>
+        <p>From professional business to enterprise, we’ve got you covered!</p>
+      </div>
+
+      <div class="footer-container">
+        <div>
+          <img
+            class="footer-image-left"
+            src="https://res.cloudinary.com/dc2wavkin/image/upload/v1730102034/sn2-removebg-preview_sdirio1_ppodpm.png"
+            alt="Left Footer Image"
+          />
+          <p style="font-size: 15px; padding: 15px">
+            ServerNexGen, address<br />state, pincode
+          </p>
+          <p style="font-size: 15px; padding: 15px">
+            Copyright &copy; 2024 servernexgen.com.<br />All rights reserved.
+          </p>
+          <a href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </div>
+        <div class="footer-section">
+          <h4 style="color: #00bfff">Company</h4>
+          <ul>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 style="color: #00bfff">Community</h4>
+          <ul>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Content</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 style="color: #00bfff">Services</h4>
+          <ul>
+            <li><a href="shared.html">Shared Hosting</a></li>
+            <li><a href="reseller.html">Reseller Hosting</a></li>
+            <li><a href="vps.html">Virtual Private Servers</a></li>
+            <li><a href="dedicated.html">Dedicated Servers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 style="color: #00bfff">Login</h4>
+          <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-	
-						
-</body>
+    <script>
+      const submitForm = async (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        try {
+          const response = await fetch("http://localhost:5000/contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, message }),
+          });
+
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+
+          const data = await response.json();
+          alert(data.message);
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      };
+
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", submitForm);
+    </script>
+  </body>
 </html>
